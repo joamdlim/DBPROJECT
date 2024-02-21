@@ -1,7 +1,7 @@
 ﻿
 namespace DBPROJECT
 {
-    partial class Form1
+    partial class frmUserProfile
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace DBPROJECT
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserProfile));
             this.cbxGender = new System.Windows.Forms.ComboBox();
             this.txtLoginName = new System.Windows.Forms.TextBox();
             this.pkrBirthdate = new System.Windows.Forms.DateTimePicker();
@@ -90,7 +90,6 @@ namespace DBPROJECT
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Login Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -168,6 +167,7 @@ namespace DBPROJECT
             this.btnChangePwd.Text = "Change User Password";
             this.btnChangePwd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnChangePwd.UseVisualStyleBackColor = true;
+            this.btnChangePwd.Click += new System.EventHandler(this.btnChangePwd_Click);
             // 
             // btnSave
             // 
@@ -224,7 +224,7 @@ namespace DBPROJECT
             this.pictBoxUser.TabIndex = 18;
             this.pictBoxUser.TabStop = false;
             // 
-            // Form1
+            // frmUserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -247,7 +247,8 @@ namespace DBPROJECT
             this.Controls.Add(this.pkrBirthdate);
             this.Controls.Add(this.txtLoginName);
             this.Controls.Add(this.cbxGender);
-            this.Name = "Form1";
+            this.Name = "frmUserProfile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxUser)).EndInit();
