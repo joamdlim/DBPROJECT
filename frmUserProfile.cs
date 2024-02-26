@@ -100,7 +100,7 @@ namespace DBPROJECT
                 }
                 else
                 {
-                    this.txtLoginName.Text = dt.Rows[0][0].ToString();
+                    this.txtLoginName.Text = dt.Rows[0][0].ToString(); 
                     this.txtEmail.Text = dt.Rows[0][1].ToString();
                     this.txtSMTPHOST.Text = dt.Rows[0][2].ToString();
                     this.txtSMTPport.Text = dt.Rows[0][3].ToString();
