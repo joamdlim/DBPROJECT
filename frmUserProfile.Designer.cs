@@ -214,6 +214,7 @@ namespace DBPROJECT
             this.btnClear.Text = "Clear Photo";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // pictBoxUser
             // 
